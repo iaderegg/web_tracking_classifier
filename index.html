@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Clasificador de seguimientos</title>
+
+        <!-- Styles sheet's -->
+        <link rel=stylesheet type="text/css" href="styles/bootstrap.min.css">
+        <link rel=stylesheet type="text/css" href="styles/styles.css">
+
+    </head>
+
+    <body>
+        <div class="jumbotron text-center">
+            <h1>Clasificador de seguimientos</h1>
+            <h4>V 0.5</h4>
+        </div>
+
+        <div class="container" id="body-container">
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <h4>Familiar</h4>
+                    <div class="row">
+                        <div class="form-group col-sm-12">
+                            <textarea name="familiar_textarea" id="familiar_textarea" rows="5" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button class="btn btn-primary" id="familiar_button">Probar</button>
+                        </div>
+                    </div>
+
+                    W
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="col-sm-6">
+                                <p>LogReg</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p id="class_logreg"></p>
+                            </div>
+                        </div>
+
+                        <!-- Classifier result -->
+                        <div class="col-sm-9" id="classifier_result_familiar" >
+                            <div class="row">
+                                <p>Doc2Vec</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p id="class_1"></p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p id="prob_1"></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p id="class_2"></p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p id="prob_2"></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p id="class_3"></p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p id="prob_3"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <h4>Económico</h4>
+                    <div class="form-group">
+                        <textarea name="economic_textarea" id="economic_textarea" rows="5" class="form-control"></textarea>
+                    </div>
+                    <button class="btn btn-primary" id="economic_button">Probar</button>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>Individual</h4>
+                    <div class="form-group">
+                        <textarea name="individual_textarea" id="individual_textarea" rows="5" class="form-control"></textarea>
+                    </div>
+                    <button class="btn btn-primary" id="individual_button">Probar</button>
+                </div>
+                <div class="col-sm-6">
+                    <h4>Académico</h4>
+                    <div class="form-group">
+                        <textarea name="academic_textarea" id="academic_textarea" rows="5" class="form-control"></textarea>
+                    </div>
+                    <button class="btn btn-primary" id="academic_button">Probar</button>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>Vida universitaria</h4>
+                    <div class="form-group">
+                        <textarea name="universitarylife_textarea" id="universitarylife_textarea" rows="5" class="form-control"></textarea>
+                    </div>
+                    <button class="btn btn-primary" id="universitarylife_button">Probar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron text-center" style="margin-bottom:0">
+            <p>Iader E. García Gómez</p>
+            <p>2018</p>
+        </div>
+
+        <script src="js/jquery-3.1.1.min.js" language="javascript" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" language="javascript" type="text/javascript"></script>
+        <script src="js/index.js" language="javascript" type="text/javascript"></script>
+
+    </body>
+</html>
